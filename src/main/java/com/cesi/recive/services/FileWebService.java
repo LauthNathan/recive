@@ -1,15 +1,22 @@
 package com.cesi.recive.services;
 
-import javax.ejb.Stateless;
+import com.cesi.recive.message.ProducerSbLocal;
+
+import javax.ejb.EJB;
+import javax.jms.JMSException;
 import javax.jws.WebService;
-import javax.jws.soap.SOAPBinding;
+import java.time.Instant;
 
-@Stateless
-@WebService
-@SOAPBinding(style = SOAPBinding.Style.RPC)
-public class FileWebService {
+@WebService(endpointInterface = "com.cesi.recive.services.IFileWebService")
+public class FileWebService implements IFileWebService {
 
-    public String printHello(String name) {
-        return "Hello " + name + " !";
+    @EJB
+    private ProducerSbLocal producerSb;
+
+    @Override
+    public String say(String name) throws JMSException {
+        producerSb.sendMessageToQueue(name);
+        System.out.println("@ "+ Instant.now()+" retourne Hello "+name);
+        return "Hello "+name;
     }
 }
