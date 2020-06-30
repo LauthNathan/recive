@@ -12,7 +12,7 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * <p>Classe Java pour MSG complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>Le fragment de schï¿½ma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="MSG">
@@ -66,7 +66,7 @@ public class MSG {
     protected JAXBElement<String> tokenUser;
 
     /**
-     * Obtient la valeur de la propriété appVersion.
+     * Obtient la valeur de la propriï¿½tï¿½ appVersion.
      * 
      * @return
      *     possible object is
@@ -78,7 +78,7 @@ public class MSG {
     }
 
     /**
-     * Définit la valeur de la propriété appVersion.
+     * Dï¿½finit la valeur de la propriï¿½tï¿½ appVersion.
      * 
      * @param value
      *     allowed object is
@@ -90,7 +90,7 @@ public class MSG {
     }
 
     /**
-     * Obtient la valeur de la propriété data.
+     * Obtient la valeur de la propriï¿½tï¿½ data.
      * 
      * @return
      *     possible object is
@@ -102,7 +102,7 @@ public class MSG {
     }
 
     /**
-     * Définit la valeur de la propriété data.
+     * Dï¿½finit la valeur de la propriï¿½tï¿½ data.
      * 
      * @param value
      *     allowed object is
@@ -114,7 +114,7 @@ public class MSG {
     }
 
     /**
-     * Obtient la valeur de la propriété info.
+     * Obtient la valeur de la propriï¿½tï¿½ info.
      * 
      * @return
      *     possible object is
@@ -126,7 +126,7 @@ public class MSG {
     }
 
     /**
-     * Définit la valeur de la propriété info.
+     * Dï¿½finit la valeur de la propriï¿½tï¿½ info.
      * 
      * @param value
      *     allowed object is
@@ -138,7 +138,7 @@ public class MSG {
     }
 
     /**
-     * Obtient la valeur de la propriété operationName.
+     * Obtient la valeur de la propriï¿½tï¿½ operationName.
      * 
      * @return
      *     possible object is
@@ -150,7 +150,7 @@ public class MSG {
     }
 
     /**
-     * Définit la valeur de la propriété operationName.
+     * Dï¿½finit la valeur de la propriï¿½tï¿½ operationName.
      * 
      * @param value
      *     allowed object is
@@ -162,7 +162,7 @@ public class MSG {
     }
 
     /**
-     * Obtient la valeur de la propriété operationVersion.
+     * Obtient la valeur de la propriï¿½tï¿½ operationVersion.
      * 
      * @return
      *     possible object is
@@ -174,7 +174,7 @@ public class MSG {
     }
 
     /**
-     * Définit la valeur de la propriété operationVersion.
+     * Dï¿½finit la valeur de la propriï¿½tï¿½ operationVersion.
      * 
      * @param value
      *     allowed object is
@@ -186,7 +186,7 @@ public class MSG {
     }
 
     /**
-     * Obtient la valeur de la propriété statutOp.
+     * Obtient la valeur de la propriï¿½tï¿½ statutOp.
      * 
      * @return
      *     possible object is
@@ -198,7 +198,7 @@ public class MSG {
     }
 
     /**
-     * Définit la valeur de la propriété statutOp.
+     * Dï¿½finit la valeur de la propriï¿½tï¿½ statutOp.
      * 
      * @param value
      *     allowed object is
@@ -210,7 +210,7 @@ public class MSG {
     }
 
     /**
-     * Obtient la valeur de la propriété tokenApp.
+     * Obtient la valeur de la propriï¿½tï¿½ tokenApp.
      * 
      * @return
      *     possible object is
@@ -222,7 +222,7 @@ public class MSG {
     }
 
     /**
-     * Définit la valeur de la propriété tokenApp.
+     * Dï¿½finit la valeur de la propriï¿½tï¿½ tokenApp.
      * 
      * @param value
      *     allowed object is
@@ -234,7 +234,7 @@ public class MSG {
     }
 
     /**
-     * Obtient la valeur de la propriété tokenUser.
+     * Obtient la valeur de la propriï¿½tï¿½ tokenUser.
      * 
      * @return
      *     possible object is
@@ -246,7 +246,7 @@ public class MSG {
     }
 
     /**
-     * Définit la valeur de la propriété tokenUser.
+     * Dï¿½finit la valeur de la propriï¿½tï¿½ tokenUser.
      * 
      * @param value
      *     allowed object is
