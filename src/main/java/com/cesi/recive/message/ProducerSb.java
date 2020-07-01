@@ -15,6 +15,14 @@ public class ProducerSb implements ProducerSbLocal {
     @Resource(mappedName = "jms/fileQueuePoolFactory")
     private ConnectionFactory fileQueuePoolFactory;
 
+    /**
+     * Create a TextMessage Message to put in the queue.
+     *
+     * @param session - The session created to access the JMS queue.
+     * @param messageData - The message to put in the TextMessage.
+     * @return The newly created TextMessage.
+     * @throws JMSException The JMSException thrown if something goes wrong.
+     */
     private Message createJMSMessageForJmsFileQueue(Session session, Msg messageData) throws JMSException {
         TextMessage tm = session.createTextMessage();
         tm.setText(messageData.getData().get(1).toString());
@@ -27,6 +35,12 @@ public class ProducerSb implements ProducerSbLocal {
         return tm;
     }
 
+    /**
+     * Send a Message to the jms/fileQueue.
+     *
+     * @param messageData - The Message to put in the TextMessage.
+     * @throws JMSException The JMSException thrown if something goes wrong.
+     */
     private void sendJmsMessageToFileQueue(Msg messageData) throws JMSException {
         Connection connection = null;
         Session session = null;
@@ -49,6 +63,12 @@ public class ProducerSb implements ProducerSbLocal {
         }
     }
 
+    /**
+     * Method used to call the methods above.
+     *
+     * @param message - The message to send to the queue.
+     * @throws JMSException The JMSException thrown if something goes wrong.
+     */
     public void sendMessageToQueue(Msg message) throws JMSException {
         sendJmsMessageToFileQueue(message);
     }

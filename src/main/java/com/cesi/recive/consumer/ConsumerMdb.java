@@ -19,6 +19,11 @@ public class ConsumerMdb implements MessageListener {
     @EJB
     private AnswerServiceLocal answerService;
 
+    /**
+     * Method called when there is some message in the JMS queue.
+     *
+     * @param message - The message of the JMQ queue.
+     */
     @Override
     public void onMessage(Message message) {
         TextMessage textMessage = (TextMessage) message;

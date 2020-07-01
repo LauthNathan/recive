@@ -8,6 +8,18 @@ import java.util.ArrayList;
 @Stateless
 public class AnswerService implements AnswerServiceLocal {
 
+    /**
+     * Send a response to the C# server.
+     *
+     * @param secret - The secret to find in the file(s).
+     * @param path - The path of the file containing the secret message.
+     * @param key - The key to decrypt the file.
+     * @param confidence - The probability of the file to be in french.
+     * @param appVersion - The version of the app.
+     * @param operationVersion - The version of the operation.
+     * @param tokenApp - The token of the application.
+     * @param tokenUser - The token of the user.
+     */
     @Override
     public void sendResponse(String secret, String path, String key, String confidence, String appVersion,
                              String operationVersion, String tokenApp, String tokenUser) {

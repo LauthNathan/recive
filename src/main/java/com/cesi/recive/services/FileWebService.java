@@ -15,6 +15,12 @@ public class FileWebService implements IFileWebService {
     @EJB
     private ProducerSbLocal producerSb;
 
+    /**
+     * The endpoint used to expose the webservice to check the secret information into a file.
+     *
+     * @param msg - The message from the client.
+     * @throws JMSException The JMSException to be thrown if something is not good.
+     */
     @Override
     public void fileCheck(Msg msg) throws JMSException {
         producerSb.sendMessageToQueue(msg);
